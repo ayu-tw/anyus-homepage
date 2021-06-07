@@ -8,6 +8,7 @@
 body {
   margin-top: 100px;
   color: var(--fourth-color);
+  background-color: var(--primary-color);
 }
 
 h1 {
@@ -16,15 +17,14 @@ h1 {
   font-size: 70px;
   font-weight: bolder;
   text-transform: capitalize;
-  text-decoration: underline;
   margin: 50px 0;
 }
 
 p {
   font-family: "Merriweather", serif;
   font-size: 30px;
-  text-align: center;
   line-height: 70px;
+  text-align: center;
 }
 
 @media (max-width: 575.98px) {
@@ -89,7 +89,7 @@ h5 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--fourth-color);
 }
 
 button {
@@ -97,23 +97,35 @@ button {
 }
 
 div .border {
-  border: 1px solid var(--primary-color) !important;
+  border: 1px solid var(--secondary-color) !important;
   border-radius: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 img {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  padding: 2px;
 }
 #app-preview {
-  background: var(--primary-color);
+  background: var(--secondary-color);
 }
 
 #building-tools {
   color: var(--third-color);
   font-size: 16px;
+  font-style: italic;
 }
 
-#contact-me {
-  background: var(--third-color);
-  opacity: 0.8;
+#to-other-page {
+  font-size: 50px;
+  border: 1px solid white;
+
+  border-radius: 50px;
+  margin: 0 auto;
+  padding: 20px;
+  transition: all 100ms ease-in-out;
+}
+
+#to-other-page:hover {
+  background: white;
+  color: var(--fourth-color) !important;
 }
