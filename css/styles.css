@@ -1,18 +1,27 @@
+:root {
+  --primary-color: #ffed99;
+  --secondary-color: #f6b8b8;
+  --third-color: #ac66cc;
+  --fourth-color: #3b14a7;
+}
+
 body {
   margin-top: 100px;
+  color: var(--fourth-color);
 }
 
 h1 {
   text-align: center;
-  font-family: "Rye", cursive;
+  font-family: "Merriweather", serif;
   font-size: 70px;
+  font-weight: bolder;
   text-transform: capitalize;
   text-decoration: underline;
   margin: 50px 0;
 }
 
 p {
-  font-family: "Fredericka the Great", cursive;
+  font-family: "Merriweather", serif;
   font-size: 30px;
   text-align: center;
   line-height: 70px;
@@ -34,18 +43,31 @@ p {
 }
 
 li {
-  font-family: "Fredericka the Great", cursive;
-  font-size: 30px;
-
+  font-family: "Merriweather", serif;
+  font-size: 20px;
   list-style-type: none;
 }
 
-h3,
+.nav-link {
+  color: var(--fourth-color) !important;
+}
+
+h3 {
+  font-family: "Merriweather", serif;
+  text-align: center;
+  margin: 30px 0;
+  font-weight: bolder;
+  line-height: 50px;
+}
+
 h5 {
-  font-family: "Fredericka the Great", cursive;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
   text-align: center;
   margin: 30px 0;
   font-weight: 580;
+  line-height: 50px;
+  padding: 20px;
 }
 
 #skills {
@@ -64,6 +86,7 @@ h5 {
   margin: 0 25px;
   display: block;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -73,24 +96,24 @@ button {
   margin-bottom: -10px !important;
 }
 
-footer {
-  text-align: center;
-  text-decoration: overline;
+div .border {
+  border: 1px solid var(--primary-color) !important;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+img {
+  margin-bottom: 10px;
+}
+#app-preview {
+  background: var(--primary-color);
 }
 
-#github {
-  font-size: 40px;
+#building-tools {
+  color: var(--third-color);
+  font-size: 16px;
 }
 
-@media (max-width: 575.98px) {
-  .project {
-    display: block;
-    margin: 0 auto;
-  }
-  .border {
-    border-top: transparent !important;
-    border-right: transparent !important;
-    border-left: transparent !important;
-    border-bottom: 10px dotted #dde2e6 !important;
-  }
+#contact-me {
+  background: var(--third-color);
+  opacity: 0.8;
 }
