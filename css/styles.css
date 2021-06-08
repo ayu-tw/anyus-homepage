@@ -30,12 +30,6 @@ p #italic:hover {
   font-style: italic;
 }
 
-@media (max-width: 575.98px) {
-  p {
-    line-height: 30px;
-  }
-}
-
 #to-be {
   font-weight: 600;
   text-transform: uppercase;
@@ -88,6 +82,10 @@ img#tool {
 @media (max-width: 575.98px) {
   h1 {
     font-size: 50px;
+  }
+
+  p {
+    line-height: 30px;
   }
 
   img#tool {
@@ -160,6 +158,17 @@ img#projects {
 #to-other-page:hover {
   background: white;
   color: var(--fourth-color) !important;
+}
+
+#email-me {
+  margin-top: 50px;
+}
+
+@media (max-width: 575.98px) {
+  #about-to-show {
+    display: none !important;
+    color: red;
+  }
 }
 
 footer {
