@@ -22,14 +22,17 @@ h1 {
 
 p {
   font-family: "Merriweather", serif;
-
+  line-height: 50px;
   text-align: center;
+}
+
+p #italic:hover {
+  font-style: italic;
 }
 
 @media (max-width: 575.98px) {
   p {
-    font-size: 20px;
-    line-height: 33px;
+    line-height: 30px;
   }
 }
 
@@ -72,11 +75,36 @@ h5 {
 #skills {
   max-width: 50px;
 }
+
+#skill-name {
+  font-family: "Merriweather", serif;
+  color: var(--third-color);
+}
+
+img#tool {
+  max-height: 50px;
+}
+
 @media (max-width: 575.98px) {
-  #skills {
-    text-align: center !important;
-    margin: 0 auto;
-    display: block;
+  h1 {
+    font-size: 50px;
+  }
+
+  img#tool {
+    max-height: 40px;
+  }
+
+  #skill-name {
+    font-size: 10px;
+    font-weight: bolder;
+    margin: 0px 25px;
+  }
+  img#certificate {
+    max-height: 220px;
+  }
+
+  footer {
+    font-size: 11px;
   }
 }
 
@@ -100,10 +128,12 @@ div .border {
   border-radius: 2px;
   margin-bottom: 25px;
 }
-img {
+
+img #projects {
   margin-bottom: 30px;
   padding: 2px;
 }
+
 #app-preview {
   background: var(--secondary-color);
 }
@@ -117,7 +147,6 @@ img {
 #to-other-page {
   font-size: 50px;
   border: 1px solid white;
-
   border-radius: 50px;
   margin: 0 auto;
   padding: 20px;
@@ -127,4 +156,8 @@ img {
 #to-other-page:hover {
   background: white;
   color: var(--fourth-color) !important;
+}
+
+footer {
+  text-decoration: overline;
 }
