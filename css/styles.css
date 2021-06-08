@@ -9,11 +9,14 @@ body {
   margin-top: 100px;
   color: var(--fourth-color);
   background-color: var(--primary-color);
+  font-family: "Merriweather", serif;
+}
+.active {
+  font-weight: bolder;
 }
 
 h1 {
   text-align: center;
-  font-family: "Merriweather", serif;
   font-size: 70px;
   font-weight: bolder;
   text-transform: capitalize;
@@ -21,7 +24,6 @@ h1 {
 }
 
 p {
-  font-family: "Merriweather", serif;
   line-height: 50px;
   text-align: center;
 }
@@ -39,7 +41,6 @@ p #italic:hover {
 }
 
 li {
-  font-family: "Merriweather", serif;
   font-size: 20px;
   list-style-type: none;
 }
@@ -49,7 +50,6 @@ li {
 }
 
 h3 {
-  font-family: "Merriweather", serif;
   text-align: center;
   margin: 30px 0;
   font-weight: bolder;
@@ -57,7 +57,6 @@ h3 {
 }
 
 h5 {
-  font-family: "Merriweather", serif;
   font-size: 20px;
   text-align: center;
   margin: 30px 0;
@@ -71,7 +70,6 @@ h5 {
 }
 
 #skill-name {
-  font-family: "Merriweather", serif;
   color: var(--third-color);
 }
 
@@ -164,11 +162,9 @@ img#projects {
   margin-top: 50px;
 }
 
-@media (max-width: 575.98px) {
-  #about-to-show {
-    display: none !important;
-    color: red;
-  }
+#linkedin {
+  color: #0766c2;
+  font-size: 22px;
 }
 
 footer {
