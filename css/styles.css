@@ -103,6 +103,10 @@ img#tool {
     max-height: 220px;
   }
 
+  #app-content {
+    display: none;
+  }
+
   footer {
     font-size: 11px;
   }
@@ -129,7 +133,7 @@ div .border {
   margin-bottom: 25px;
 }
 
-img #projects {
+img#projects {
   margin-bottom: 30px;
   padding: 2px;
 }
